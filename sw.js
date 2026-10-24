@@ -1,5 +1,5 @@
 // RUMAHKU service worker: tampilan bisa dibuka cepat & saat sinyal lemah. Data tetap dari server (tidak di-cache di sini).
-const V = 'rumahku-1792859375'
+const V = 'rumahku-1792860815'
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(['./', './index.html', './manifest.webmanifest', './icon-192.png', './logo.webp'])).then(() => self.skipWaiting()))
 })
